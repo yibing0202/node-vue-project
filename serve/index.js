@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 
-app.set('secret', 'yibing')
-app.use(require('cors')())
+app.set('secret', 'yibing')  //设置秘钥，token需要
+app.use(require('cors')())   //跨域插件
 app.use(express.json())
 app.use('/uploads', express.static(__dirname + '/uploads'))
 

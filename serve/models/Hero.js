@@ -6,6 +6,9 @@ const schema = new mongoose.Schema({
   avatar: {
     type: String
   },
+  banner: {
+    type: String
+  },
   title: {
     type:String
   },
@@ -26,6 +29,18 @@ const schema = new mongoose.Schema({
       type: Number
     }
   },
+  skinNum: {
+    type: Number
+  },
+    upMain: {
+      type: String
+    },
+    upLess: {
+      type: String
+    },
+    sumSkills: {
+      type: String
+  },
   skills: [{
     icon: {
       type: String
@@ -34,6 +49,12 @@ const schema = new mongoose.Schema({
       type: String
     },
     detailed: {
+      type: String
+    },
+    CD: {
+      type: String
+    },
+    deplete: {
       type: String
     },
     descriptions: {
@@ -55,15 +76,49 @@ const schema = new mongoose.Schema({
   teamTips: {
     type: String
   },
-  relations: [{
+  inscription: {
+   icon: {
+     type: String
+   },
+   name: {
+    type: String
+  },
+  descriptions: {
+    type: String
+  }
+  },
     partners: {
      hero: {
        type: mongoose.SchemaTypes.ObjectId, ref: "Hero"
+     },
+     avatar: {
+       type: String
+     },
+     descriptions: {
+       type: String
      }
     },
-    descriptions: {
-      type: String
-    }
-  }]
+    reRestrained : {
+      hero: {
+        type: mongoose.SchemaTypes.ObjectId, ref: "Hero"
+      },
+      avatar: {
+        type: String
+      },
+      descriptions: {
+        type: String
+      }
+     },
+     restrained : {
+      hero: {
+        type: mongoose.SchemaTypes.ObjectId, ref: "Hero"
+      },
+      avatar: {
+        type: String
+      },
+      descriptions: {
+        type: String
+      }
+     }
 })
-module.exports = mongoose.model('Hero', schema)
+module.exports = mongoose.model('Hero', schema,'heroes')

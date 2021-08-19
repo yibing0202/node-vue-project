@@ -13,6 +13,8 @@ const AdEdit = () => import('../views/main/AdEdit.vue')
 const AdList = () => import('../views/main/AdList.vue')
 const AdminUserEdit = () => import('../views/main/AdminUserEdit.vue')
 const AdminUserList = () => import('../views/main/AdminUserList.vue')
+const VideoEdit = () => import('../views/main/VideoEdit.vue')
+const VideoList = () => import('../views/main/VideoList.vue')
 const Login = () => import('../views/main/login.vue')
 Vue.use(VueRouter)
 
@@ -106,6 +108,19 @@ const routes = [
       {
         path: '/admin_user/new/:id',
         component: AdminUserEdit,
+        props: true
+      },
+      {
+        path: '/videos/new',
+        component: VideoEdit
+      },
+      {
+        path: '/videos/list',
+        component: VideoList
+      },
+      {
+        path: '/videos/new/:id',
+        component: VideoEdit,
         props: true
       }
     ]

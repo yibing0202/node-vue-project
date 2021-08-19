@@ -12,7 +12,7 @@
     </el-option>
   </el-select>
      </el-form-item>
-      <el-form-item label="名称" >
+      <el-form-item label="装备名称" >
        <el-input v-model="model.name"></el-input>
      </el-form-item>
       <el-form-item label="图标" >
@@ -27,6 +27,15 @@
   <i v-else class="el-icon-plus avatar-uploader-icon"></i>
 </el-upload>
 
+     </el-form-item>
+      <el-form-item label="装备价格" >
+       <el-input v-model="model.price"></el-input>
+     </el-form-item>
+      <el-form-item label="基础属性" >
+       <el-input v-model="model.basic"></el-input>
+     </el-form-item>
+      <el-form-item label="装备技能" >
+       <el-input v-model="model.skill"></el-input>
      </el-form-item>
      <el-form-item>
        <el-button type="primary" native-type="submit" class="new-btn">提交</el-button>
@@ -125,5 +134,28 @@ created() {
 }
 .new-btn {
   float: right;
+}
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 88px;
+  height: 88px;
+  line-height: 88px;
+  text-align: center;
+}
+.avatar {
+  width: 88px;
+  height: 88px;
+  display: block;
 }
 </style>

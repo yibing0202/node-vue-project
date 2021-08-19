@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1196941",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "4455724",
+      "name": "T1-solid-更多",
+      "font_class": "more",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6447187",
+      "name": "浏览",
+      "font_class": "liulan",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "18002351",
+      "name": "QQ",
+      "font_class": "QQ",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "20584673",
+      "name": "Video",
+      "font_class": "Video",
+      "unicode": "e51b",
+      "unicode_decimal": 58651
+    },
+    {
+      "icon_id": "23317125",
+      "name": "Alien 2",
+      "font_class": "a-Alien2",
+      "unicode": "e95a",
+      "unicode_decimal": 59738
+    }
+  ]
+}

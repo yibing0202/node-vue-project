@@ -1,0 +1,67 @@
+
+//color
+$colors: (
+  "primary": #db9e3f,
+  "orange": #f09a37,
+  "red": #ff3636,
+  "blue" : #4394e4,
+  "white": #fff,
+  "grey-1": #666,
+  "grey-2": #777,
+  "grey-3": #999,
+  "grey-4": #7a7a80,
+  "grey-5": #d4d9de,
+  "grey-6": #f9f9f9,
+  "grey-7": #d4d9de,
+  "grey-8": #fcfcfc,
+  "dark": #000,
+  "dark-1": #222,
+  "dark-2": #333,
+  "dark-3": #212222,
+  "dark-4": #343440,
+);
+$bd-color: map-get($map: $colors, $key: grey-5);
+//font size 
+$font-size-base: 1rem;
+$font-sizes: (
+  "xs": .769231,
+  "sm": .923077,
+  "md": 1,
+  "lg": 1.076923,
+  "xl": 1.230769,
+);
+
+$fl-jc: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  around: space-around,
+  between: space-between
+);
+
+$fl-al: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch
+);
+//spacing
+$spacing-types: (
+  m: margin,
+  p: padding
+);
+$spacing-directions: (
+  t: top, 
+  r: right,
+  b: bottom,
+  l: left
+);
+$spacing-sizes: (
+  0: 0,
+  1: 0.25,
+  2: 0.5,
+  3: 1,
+  4: 1.5,
+  5: 3
+);
+$spacing-base-size: 1rem;

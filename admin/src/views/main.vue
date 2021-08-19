@@ -19,6 +19,11 @@
           <el-menu-item index="/articles/new">新建文章</el-menu-item>
           <el-menu-item index="/articles/list">文章管理</el-menu-item>
         </el-menu-item-group>
+         <el-menu-item-group>
+          <template slot="title">视频</template>
+          <el-menu-item index="/videos/new">新建视频</el-menu-item>
+          <el-menu-item index="/videos/list">视频管理</el-menu-item>
+        </el-menu-item-group>
       </el-submenu>
       <el-submenu index="2">
         <template slot="title"><i class="el-icon-message"></i>运营管理</template>
@@ -52,7 +57,7 @@
       </el-dropdown>
       <span>yibing</span>
     </el-header>
-  <router-view/>
+  <router-view :key="$route.path"/>
   </el-container>
 </el-container>
 </template>

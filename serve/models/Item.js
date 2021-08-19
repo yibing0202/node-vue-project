@@ -9,6 +9,16 @@ const schema = new mongoose.Schema({
   },
   genre: {
     type: String
+  },
+  price: {
+    type: String
+  },
+  basic: {
+    type: String
+  },
+  skill: {
+    type: String
   }
+  
 })
 module.exports = mongoose.model('Item', schema)

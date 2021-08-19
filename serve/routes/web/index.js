@@ -163,7 +163,7 @@ module.exports = app => {
   })
   // 文章
   router.get('/articles/:id',async(req,res) => {
-    const data = await Article.findById(req.params.id)
+    const data = await Article.findById(req.params.id).populate('categories')
     res.send(data)
   })
   // 英雄 

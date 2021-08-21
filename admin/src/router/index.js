@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-const Main = () => import('views/main.vue')
+const Main = () => import('../views/main.vue')
 const CategoryEdit = () => import('../views/main/CategoryEdit.vue')
 const CategoryList = () => import('../views/main/CategoryList.vue')
 const ItemEdit = () => import('../views/main/ItemEdit.vue')
@@ -129,6 +129,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 

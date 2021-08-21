@@ -15,7 +15,7 @@ Vue.mixin({
     }
   }
 })
-import http from 'network/http'
+import http from './network/http'
 Vue.prototype.$http = http
 
 new Vue({
